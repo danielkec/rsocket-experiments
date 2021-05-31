@@ -1,0 +1,12 @@
+server:
+  port: 7001
+  host: 0.0.0.0
+
+mp.messaging:
+  incoming:
+    rsocket-channel-1:
+      connector: rsocket-connector
+      request-provider: rsocket-request-provider-1
+      address: localhost
+      port: 7979
+      route: request-stream
